@@ -1,0 +1,27 @@
+{
+  "name": "Leandre Portfolio - CEO & Founder of Echo Tech",
+  "short_name": "Leandre Portfolio",
+  "description": "Portfolio of Leandre, a software developer passionate about building web applications and learning new technologies.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/echo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/echo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["technology", "business", "productivity"],
+  "lang": "en",
+  "dir": "ltr"
+}

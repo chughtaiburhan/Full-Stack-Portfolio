@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 99%;
+    --foreground: 222.2 84% 5%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 5%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 5%;
+    --primary: 222 89% 55%; /* Sapphire */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 158 64% 52%; /* Emerald */
+    --secondary-foreground: 210 40% 98%;
+    --muted: 210 25% 94%;
+    --muted-foreground: 215 16% 40%;
+    --accent: 264 89% 62%; /* Electric Purple */
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214 32% 90%;
+    --input: 214 32% 90%;
+    --ring: 222 89% 55%;
+    --radius: 0.75rem;
+  }
+
+  /* Dark variables removed to enforce single light theme */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    @apply bg-background text-foreground text-lg leading-relaxed;
+    font-family: var(--font-inter), system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
+    font-family: var(--font-poppins), var(--font-inter), system-ui;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold leading-tight;
+    font-family: var(--font-poppins), var(--font-inter), system-ui;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight;
+  }
+  
+  h4 {
+    @apply text-xl md:text-2xl lg:text-3xl font-semibold leading-tight;
+  }
+  
+  h5 {
+    @apply text-lg md:text-xl lg:text-2xl font-medium leading-tight;
+  }
+  
+  h6 {
+    @apply text-base md:text-lg lg:text-xl font-medium leading-tight;
+  }
+  
+  p {
+    @apply text-lg leading-relaxed;
+  }
+  
+  a {
+    @apply text-lg;
+  }
+  
+  button {
+    @apply text-lg;
+  }
+  
+  input, textarea, select {
+    @apply text-lg;
+  }
+}
+
+@layer components {
+  .page-container {
+    @apply min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900;
+  }
+  
+  .content-wrapper {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 max-w-7xl;
+  }
+  
+  .section-padding {
+    @apply py-12 sm:py-16 lg:py-20;
+  }
+  
+  .card {
+    @apply bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm border border-slate-200/50 dark:border-slate-700/50 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+  
+  .bytehire-bg {
+    @apply bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900;
+  }
+
+  .bytehire-card {
+    @apply bg-white/5 backdrop-blur-sm border border-white/10;
+  }
+
+  .bytehire-button {
+    @apply bg-emerald-600 hover:bg-emerald-700 text-white border-none transition-all duration-300 text-lg font-semibold px-6 py-3;
+  }
+
+  .bytehire-button:hover {
+    @apply bg-emerald-700 -translate-y-0.5 shadow-lg;
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+  }
+
+  .bytehire-outline-button {
+    @apply bg-transparent text-white border-2 border-white transition-all duration-300 text-lg font-semibold px-6 py-3;
+  }
+
+  .bytehire-outline-button:hover {
+    @apply bg-white text-slate-900;
+  }
+
+  .bytehire-glow {
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+  }
+
+  .bytehire-text-glow {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+
+  /* Custom Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Enhanced focus states */
+  *:focus {
+    outline: 2px solid theme('colors.emerald.500');
+    outline-offset: 2px;
+  }
+
+  /* Improved button interactions */
+  .btn-hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .btn-hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Responsive text scaling */
+  @media (max-width: 640px) {
+    html {
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    html {
+      font-size: 18px;
+    }
+  }
+}
