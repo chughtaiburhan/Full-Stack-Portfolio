@@ -152,13 +152,7 @@ export default function FeaturedProjects() {
                 </p>
 
                 {/* Action Buttons */}
-                <div className="flex gap-3">
-                  <Link href={project.github} target="_blank" rel="noopener noreferrer">
-                    <Button variant="outline" size="sm" className="flex items-center gap-2">
-                      <Github className="h-4 w-4" />
-                      Code
-                    </Button>
-                  </Link>
+                <div className="flex gap-3"> 
                   <Link href={project.live} target="_blank" rel="noopener noreferrer">
                     <Button size="sm" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700">
                       <ExternalLink className="h-4 w-4" />
