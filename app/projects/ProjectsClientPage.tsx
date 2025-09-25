@@ -1,8 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
+import { motion } from "framer-motion" 
 import { useRef, useState } from "react"
 
 // 1. Define new arrays for each section
@@ -12,8 +11,7 @@ const completedProjects = [
     title: "ClinixPro",
     description: "A comprehensive hospital management system with patient records, appointment scheduling, medical inventory management, and advanced analytics dashboard.",
     image: "/hospi.png",
-    year: 2025,
-    github: "https://github.com/leandre000/clinixpro",
+    year: 2025, 
     live: "https://clinix-pro-iota.vercel.app/",
     featured: true
   },
@@ -22,8 +20,7 @@ const completedProjects = [
     title: "Talent-Connect",
     description: "A modern talent management platform connecting skilled professionals with opportunities, featuring advanced matching algorithms and seamless user experience.",
     image: "/tale.png",
-    year: 2025,
-    github: "https://github.com/leandre000/talent-connect",
+    year: 2025, 
     live: "https://talent-connect-app.vercel.app/",
     featured: true
   },
@@ -32,8 +29,7 @@ const completedProjects = [
     title: "Geenzura",
     description: "Advanced inventory management system with real-time tracking, analytics dashboard, seamless integrations, and comprehensive reporting tools.",
     image: "/genzura.png",
-    year: 2025,
-    github: "https://github.com/leandre000/genzura",
+    year: 2025, 
     live: "https://genzura-tau.vercel.app/",
     featured: true
   },
@@ -42,8 +38,7 @@ const completedProjects = [
     title: "Aguuka",
     description: "Aguuka is a fullstack MERN app with AI integration for smarter content creation and task automation.",
     image: "/aguka.jpg",
-    year: 2023,
-    github: "https://github.com/leandre000/Aguuka",
+    year: 2023, 
     live: "https://aguka-one.vercel.app/"
   },
   {
@@ -51,8 +46,7 @@ const completedProjects = [
     title: "Stoka",
     description: "Stoka is an online inventory management system designed to help businesses track stock, sales, and analytics in real time. Features include product management, reporting, and seamless integrations.",
     image: "/blog/stoka-inventory.jpg",
-    year: 2025,
-    github: "https://github.com/leandre000/stoka",
+    year: 2025, 
     live: "https://stoka-green.vercel.app/"
   },
   {
@@ -60,8 +54,7 @@ const completedProjects = [
     title: "EduPlatform",
     description: "A cutting-edge frontend for an online learning platform with modern UI/UX and responsive design.",
     image: "/edu.jpg",
-    year: 2023,
-    github: "https://github.com/leandre000/EduPlatform-Frontend",
+    year: 2023, 
     live: "https://eduplatform-iota.vercel.app/"
   }
 ];
@@ -85,20 +78,17 @@ const others = [
   {
     id: 1,
     title: "HingaAI",
-    description: "Agro_senseai helps farmers manage pests and diseases of crops.",
-    github: "https://github.com/leandre000/Hinga-Ai"
+    description: "Agro_senseai helps farmers manage pests and diseases of crops.", 
   },
   {
     id: 2,
     title: "Genzura",
-    description: "Online inventory management system.",
-    github: "https://github.com/leandre000/genzura"
+    description: "Online inventory management system.", 
   },
   {
     id: 3,
     title: "T-HealthSync",
-    description: "Tracks patient behavior and health status, predicts diseases using AI.",
-    github: "https://github.com/leandre000/T-HealthSync"
+    description: "Tracks patient behavior and health status, predicts diseases using AI.", 
   }
 ];
 

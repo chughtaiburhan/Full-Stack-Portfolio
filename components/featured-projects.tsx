@@ -24,8 +24,7 @@ const projects = [
     description: "A modern talent management platform connecting skilled professionals with opportunities, featuring advanced matching algorithms and seamless user experience.",
     image: "/tale.png",
     categories: ["Web Development", "Fullstack", "Talent Management"],
-    year: 2025,
-    github: "https://github.com/leandre000/talent-connect",
+    year: 2025, 
     live: "https://talent-connect-app.vercel.app/",
     featured: true
   },
@@ -35,8 +34,7 @@ const projects = [
     description: "Advanced inventory management system with real-time tracking, analytics dashboard, and seamless integrations.",
     image: "/genzura.png",
     categories: ["Web Development", "Fullstack", "E-commerce"],
-    year: 2025,
-    github: "https://github.com/leandre000/genzura",
+    year: 2025, 
     live: "https://genzura-tau.vercel.app/",
     featured: true
   },
@@ -46,8 +44,7 @@ const projects = [
     description: "Aguuka is a fullstack MERN app with AI integration for smarter content creation and task automation.",
     image: "/aguka.jpg",
     categories: ["Web Development", "Fullstack", "AI"],
-    year: 2023,
-    github: "https://github.com/leandre000/Aguuka",
+    year: 2023, 
     live: "https://aguka-one.vercel.app/"
   },
   {
@@ -56,8 +53,7 @@ const projects = [
     description: "Stoka is an online inventory management system designed to help businesses track stock, sales, and analytics in real time. Features include product management, reporting, and seamless integrations.",
     image: "/blog/stoka-inventory.jpg",
     categories: ["Web Development", "Fullstack", "Inventory"],
-    year: 2025,
-    github: "https://github.com/leandre000/stoka",
+    year: 2025, 
     live: "https://stoka-green.vercel.app/"
   },
   {
@@ -66,8 +62,7 @@ const projects = [
     description: "A cutting-edge frontend for an online learning platform with modern UI/UX and responsive design.",
     image: "/edu.jpg",
     categories: ["Web Development", "Frontend", "Education"],
-    year: 2023,
-    github: "https://github.com/leandre000/EduPlatform-Frontend",
+    year: 2023, 
     live: "https://eduplatform-iota.vercel.app/"
   }
 ]
